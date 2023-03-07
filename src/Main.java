@@ -59,7 +59,7 @@ public class Main {
         for (; total1 < 12_000_000; month1++) {
             total1 = (int) (total1 + (total1 * 0.07));
             total1 = total1 + pays;
-            if (month1 % 6 ==0){
+            if (month1 % 6 == 0) {
                 System.out.println("Месяц " + month1 + " сумма накоплений равна " + total1 + " рублей");
             }
         }
@@ -72,28 +72,37 @@ public class Main {
         int endYear = 2117;
         int years = 0;
         int period = endYear - beginningYear;
-        for (;beginningYear < endYear;){
+        for (; beginningYear < endYear; ) {
             beginningYear = beginningYear + 79;
             System.out.println(beginningYear);
         }
 
-
-        // Задание 6
-        System.out.println("Задача 6");
-        int salarys = 15000;
-        int totalss= 0;
-        int monthNumber = 0;
-        int numb = 9 * 12;
-        for (; totalss < 12_000_000; monthNumber++ ) {
-            totalss = (int) (totalss + (totalss * 0.07));
-            totalss = totalss + salarys;
-            if (monthNumber % 6 == 0 && monthNumber <= numb) {
-                System.out.println(monthNumber + " сумма накоплений за пол года " + totalss + " рублей");
+        // Задание 7
+        System.out.println("Задача 7");
+        int dayNumber = 1;
+        for (; dayNumber <= 31; dayNumber++) {
+            if (dayNumber % 7 == 0) {
+                System.out.println("Сегодня пятница!" + dayNumber + " число");
             }
+
+
+
+            // Задание 6
+            System.out.println("Задача 6");
+            int salarys = 15000;
+            int totalss = 0;
+            int monthNumber = 0;
+            int numb = 9 * 12;
+            for (; totalss < 12_000_000; monthNumber++) {
+                totalss = (int) (totalss + (totalss * 0.07));
+                totalss = totalss + salarys;
+                if (monthNumber % 6 == 0 && monthNumber <= numb) {
+                    System.out.println(monthNumber + " сумма накоплений за пол года " + totalss + " рублей");
+                }
+            }
+
+
         }
 
-
-
     }
-
 }
