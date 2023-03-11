@@ -27,13 +27,13 @@ public class Main {
 
         System.out.println("Задача 2");
         int number = 1;
-        while (number <= 10) {
+        for  ( int i=0; number <= 10; i++) {
             System.out.print(number + " ");
             number = number + 1;
         }
         System.out.println();
         int numbers = 10;
-        while (numbers > 0) {
+        for ( int i =0; numbers > 0; i --) {
             System.out.print(numbers + "");
             numbers = numbers - 1;
         }
@@ -59,7 +59,7 @@ public class Main {
         int months = 0;
         do {
             months++;
-            totals = (int) (totals * 0.07);
+            totals = (int) (pay * 0.07);
             totals = totals + pay;
             System.out.println("Месяц " + months + " сумма накоплений равна " + totals + " рублей");
         } while (totals <= 12_000_000);
@@ -91,6 +91,13 @@ public class Main {
         }
     }
     public static void task7() {
+        System.out.println("Задача 7");
+        int firstFriday = 3;
+        for (int i = firstFriday; i <= 31 ; i += 7) {
+            System.out.println("Пятница " + i + " пора сдавать отчёт!");
+
+        }
+
 
     }
     public static void task6() {
